@@ -1,4 +1,4 @@
-import { Int8, Uint8 } from "../types/typed-numbers.types";
+import { Int16, Int8, Uint16, Uint8 } from "../types/typed-numbers.types";
 import { i8_to_u8 } from "./i8";
 
 
@@ -18,6 +18,23 @@ export function u8_to_i8(u8: Uint8): Int8 {
     to_i8_u8[0] = u8;
     return to_i8_i8[0] as Int8;
 }
+
+const to_u16_buffer = new ArrayBuffer(2);
+const to_u16_u8 = new Uint8Array(to_u16_buffer);
+const to_u16_u16 = new Uint16Array(to_u16_buffer);
+export function u8_to_u16(u8: Uint8): Uint16 {
+    to_u16_u8[0] = u8;
+    return to_u16_u16[0] as Uint16;
+}
+
+const to_i16_buffer = new ArrayBuffer(2);
+const to_i16_u8 = new Uint8Array(to_i16_buffer);
+const to_i16_i16 = new Int16Array(to_i16_buffer);
+export function u8_to_i16(u8: Uint8): Int16 {
+    to_i16_u8[0] = u8;
+    return to_i16_i16[0] as Int16;
+}
+
 
 
 // Math
