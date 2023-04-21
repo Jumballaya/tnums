@@ -51,7 +51,7 @@ The overall type API is as follows:
 
 The type conversion and creating is done using a series of ArrayBuffers and Typed Arrays.
 
-
+<hr />
 ### u8
 
 **Create New u8**
@@ -82,7 +82,7 @@ const red = u8.new(144);
 - To `u16`: `u8.cast_to_u16(n: Uint8) => Uint16`
 - To `i16`: `u8.cast_to_i16(n: Uint8) => Int16`
 
-
+<hr />
 ### i8
 
 **Create New u8**
@@ -113,6 +113,8 @@ const temperature = i8.new(-52);
 - To `u16`: `i8.cast_to_u16(n: Int8) => Uint16`
 - To `i16`: `i8.cast_to_i16(n: Int8) => Int16`
 
+<hr />
 ### u16
 
+<hr />
 ### i16
