@@ -35,9 +35,9 @@ ctx.fillStyle = colorToString(RED);
 
 ```
 
-## API
+# API
 
-### Types
+## Types
 Import types from main package like so:
 ```
 import { u8, u16, f32 } from 'tnums';
@@ -52,7 +52,7 @@ The overall type API is as follows:
 The type conversion and creating is done using a series of ArrayBuffers and Typed Arrays.
 
 
-#### u8
+### u8
 
 **Create New u8**
 ```
@@ -83,7 +83,7 @@ const red = u8.new(144);
 - To `i16`: `u8.cast_to_i16(n: Uint8) => Int16`
 
 
-#### i8
+### i8
 
 **Create New u8**
 ```
@@ -113,6 +113,6 @@ const temperature = i8.new(-52);
 - To `u16`: `i8.cast_to_u16(n: Int8) => Uint16`
 - To `i16`: `i8.cast_to_i16(n: Int8) => Int16`
 
-#### u16
+### u16
 
-#### i16
+### i16
