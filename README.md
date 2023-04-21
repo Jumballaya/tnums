@@ -64,17 +64,17 @@ const red = u8.new(144);
 **Math**
 
 - Addition
-    -`u8 + u8`: `u8.math.add.u8(a: Uint8, b: Uint8) => Uint8`
-    -`u8 + i8`: `u8.math.add.i8(a: Uint8, b: Int8) => Uint8`
+    * `u8 + u8`: `u8.math.add.u8(a: Uint8, b: Uint8) => Uint8`
+    * `u8 + i8`: `u8.math.add.i8(a: Uint8, b: Int8) => Uint8`
 - Subtraction
-    -`u8 - u8`: `u8.math.sub.u8(a: Uint8, b: Uint8) => Uint8`
-    -`u8 - i8`: `u8.math.sub.i8(a: Uint8, b: Int8) => Uint8`
+    * `u8 - u8`: `u8.math.sub.u8(a: Uint8, b: Uint8) => Uint8`
+    * `u8 - i8`: `u8.math.sub.i8(a: Uint8, b: Int8) => Uint8`
 - Multiplication
-    -`u8 * u8`: `u8.math.mul.u8(a: Uint8, b: Uint8) => Uint8`
-    -`u8 * i8`: `u8.math.mul.i8(a: Uint8, b: Int8) => Uint8`
+    * `u8 * u8`: `u8.math.mul.u8(a: Uint8, b: Uint8) => Uint8`
+    * `u8 * i8`: `u8.math.mul.i8(a: Uint8, b: Int8) => Uint8`
 - Division
-    -`u8 / u8`: `u8.math.div.u8(a: Uint8, b: Uint8) => Uint8`
-    -`u8 / i8`: `u8.math.div.i8(a: Uint8, b: Int8) => Uint8`
+    * `u8 / u8`: `u8.math.div.u8(a: Uint8, b: Uint8) => Uint8`
+    * `u8 / i8`: `u8.math.div.i8(a: Uint8, b: Int8) => Uint8`
 
 **Cast**
 
@@ -95,17 +95,17 @@ const temperature = i8.new(-52);
 **Math**
 
 - Addition
-    -`i8 + i8`: `i8.math.add.i8(a: Uint8, b: Int8) => Int8`
-    -`i8 + u8`: `i8.math.add.u8(a: Uint8, b: Uint8) => Int8`
+    * `i8 + i8`: `i8.math.add.i8(a: Uint8, b: Int8) => Int8`
+    * `i8 + u8`: `i8.math.add.u8(a: Uint8, b: Uint8) => Int8`
 - Subtraction
-    -`i8 - i8`: `i8.math.sub.i8(a: Int8, b: Int8) => Int8`
-    -`i8 - u8`: `i8.math.sub.u8(a: Int8, b: Uint8) => Int8`
+    * `i8 - i8`: `i8.math.sub.i8(a: Int8, b: Int8) => Int8`
+    * `i8 - u8`: `i8.math.sub.u8(a: Int8, b: Uint8) => Int8`
 - Multiplication
-    -`i8 * i8`: `i8.math.mul.i8(a: Int8, b: Int8) => Int8`
-    -`i8 * u8`: `i8.math.mul.u8(a: Int8, b: Uint8) => Int8`
+    * `i8 * i8`: `i8.math.mul.i8(a: Int8, b: Int8) => Int8`
+    * `i8 * u8`: `i8.math.mul.u8(a: Int8, b: Uint8) => Int8`
 - Division
-    -`i8 / i8`: `i8.math.div.i8(a: Int8, b: Int8) => Int8`
-    -`i8 / u8`: `i8.math.div.u8(a: Int8, b: Uint8) => Int8`
+    * `i8 / i8`: `i8.math.div.i8(a: Int8, b: Int8) => Int8`
+    * `i8 / u8`: `i8.math.div.u8(a: Int8, b: Uint8) => Int8`
 
 **Cast**
 
