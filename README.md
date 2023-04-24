@@ -82,6 +82,12 @@ const red = u8.new(144);
 - To `i8`: `u8.cast.to_i8(n: Uint8) => Int8`
 - To `u16`: `u8.cast_to_u16(n: Uint8) => Uint16`
 - To `i16`: `u8.cast_to_i16(n: Uint8) => Int16`
+- To `u32`: `u8.cast_to_u32(n: Uint8) => Uint32`
+- To `i32`: `u8.cast_to_i32(n: Uint8) => Int32`
+- To `f32`: `u8.cast_to_f32(n: Uint8) => Float32`
+- To `u64`: `u8.cast_to_u64(n: Uint8) => Uint64`
+- To `i64`: `u8.cast_to_i64(n: Uint8) => Int64`
+- To `f64`: `u8.cast_to_f64(n: Uint8) => Float64`
 
 <hr />
 
@@ -112,13 +118,99 @@ const temperature = i8.new(-52);
 **Cast**
 
 - To `u8`: `i8.cast.to_u8(n: Int8) => Uint8`
-- To `u16`: `i8.cast_to_u16(n: Int8) => Uint16`
-- To `i16`: `i8.cast_to_i16(n: Int8) => Int16`
+- To `u16`: `u8.cast_to_u16(n: Uint8) => Uint16`
+- To `i16`: `u8.cast_to_i16(n: Uint8) => Int16`
+- To `u32`: `u8.cast_to_u32(n: Uint8) => Uint32`
+- To `i32`: `u8.cast_to_i32(n: Uint8) => Int32`
+- To `f32`: `u8.cast_to_f32(n: Uint8) => Float32`
+- To `u64`: `u8.cast_to_u64(n: Uint8) => Uint64`
+- To `i64`: `u8.cast_to_i64(n: Uint8) => Int64`
+- To `f64`: `u8.cast_to_f64(n: Uint8) => Float64`
 
 <hr />
 
 ### u16
 
+**Create New u16**
+```
+import { u16 } from 'tnums';
+
+const port = u16.new(8080);
+```
+
+**Math**
+
+- Addition
+    * `u16 + u16`: `u16.math.add.u16(a: Uint16, b: Uint16) => Uint16`
+    * `u16 + i16`: `u16.math.add.i16(a: Uint16, b: Int16) => Uint16`
+    * `u16 + u8`: `u16.math.add.u8(a: Uint16, b: Uint8) => Uint16`
+    * `u16 + i8`: `u16.math.add.i8(a: Uint16, b: Int8) => Uint16`
+- Subtraction
+    * `u16 - u16`: `u16.math.sub.u16(a: Uint16, b: Uint16) => Uint16`
+    * `u16 - i16`: `u16.math.sub.i16(a: Uint16, b: Int16) => Uint16`
+    * `u16 - u8`: `u16.math.sub.u8(a: Uint16, b: Uint8) => Uint16`
+    * `u16 - i8`: `u16.math.sub.i8(a: Uint16, b: Int8) => Uint16`
+- Multiplication
+    * `u16 * u16`: `u16.math.mul.u16(a: Uint16, b: Uint16) => Uint16`
+    * `u16 * i16`: `u16.math.mul.i16(a: Uint16, b: Int16) => Uint16`
+    * `u16 * u8`: `u16.math.mul.u8(a: Uint16, b: Uint8) => Uint16`
+    * `u16 * i8`: `u16.math.mul.i8(a: Uint16, b: Int8) => Uint16`
+- Division
+    * `u16 / u16`: `u16.math.div.u16(a: Uint16, b: Uint16) => Uint16`
+    * `u16 / i16`: `u16.math.div.i16(a: Uint16, b: Int16) => Uint16`
+    * `u16 / u8`: `u16.math.div.u8(a: Uint16, b: Uint8) => Uint16`
+    * `u16 / i8`: `u16.math.div.i8(a: Uint16, b: Int8) => Uint16`
+
+**Cast**
+
+- To `i16`: `u16.cast_to_i16(n: Uint16) => Int16`
+- To `u32`: `u16.cast_to_u32(n: Uint16) => Uint32`
+- To `i32`: `u16.cast_to_i32(n: Uint16) => Int32`
+- To `f32`: `u16.cast_to_f32(n: Uint16) => Float32`
+- To `u64`: `u16.cast_to_u64(n: Uint16) => Uint64`
+- To `i64`: `u16.cast_to_i64(n: Uint16) => Int64`
+- To `f64`: `u16.cast_to_f64(n: Uint16) => Float64`
+
 <hr />
 
 ### i16
+
+**Create New i16**
+```
+import { i16 } from 'tnums';
+
+const utf16_char = i16.new(8080);
+```
+
+**Math**
+
+- Addition
+    * `i16 + i16`: `i16.math.add.i16(a: Int16, b: Int16) => Int16`
+    * `i16 + u16`: `i16.math.add.u16(a: Int16, b: Uint16) => Int16`
+    * `i16 + u8`: `i16.math.add.u8(a: Int16, b: Uint8) => Int16`
+    * `i16 + i8`: `i16.math.add.i8(a: Int16, b: Int8) => Int16`
+- Subtraction
+    * `i16 - i16`: `i16.math.sub.i16(a: Int16, b: Int16) => Int16`
+    * `i16 - u16`: `i16.math.sub.u16(a: Int16, b: Uint16) => Int16`
+    * `i16 - u8`: `i16.math.sub.u8(a: Int16, b: Uint8) => Int16`
+    * `i16 - i8`: `i16.math.sub.i8(a: Int16, b: Int8) => Int16`
+- Multiplication
+    * `i16 * i16`: `i16.math.mul.i16(a: Int16, b: Int16) => Int16`
+    * `i16 * u16`: `i16.math.mul.u16(a: Int16, b: Uint16) => Int16`
+    * `i16 * u8`: `i16.math.mul.u8(a: Int16, b: Uint8) => Int16`
+    * `i16 * i8`: `i16.math.mul.i8(a: Int16, b: Int8) => Int16`
+- Division
+    * `i16 / i16`: `i16.math.div.i16(a: Int16, b: Int16) => Int16`
+    * `i16 / u16`: `i16.math.div.u16(a: Int16, b: Uint16) => Int16`
+    * `i16 / u8`: `i16.math.div.u8(a: Int16, b: Uint8) => Int16`
+    * `i16 / i8`: `i16.math.div.i8(a: Int16, b: Int8) => Int16`
+
+**Cast**
+
+- To `u16`: `i16.cast_to_i16(n: Int16) => Uint16`
+- To `u32`: `i16.cast_to_u32(n: Int16) => Uint32`
+- To `i32`: `i16.cast_to_i32(n: Int16) => Int32`
+- To `f32`: `i16.cast_to_f32(n: Int16) => Float32`
+- To `u64`: `i16.cast_to_u64(n: Int16) => Uint64`
+- To `i64`: `i16.cast_to_i64(n: Int16) => Int64`
+- To `f64`: `i16.cast_to_f64(n: Int16) => Float64`
