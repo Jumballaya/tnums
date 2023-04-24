@@ -127,6 +127,7 @@ const temperature = i8.new(-52);
 - To `i64`: `u8.cast_to_i64(n: Uint8) => Int64`
 - To `f64`: `u8.cast_to_f64(n: Uint8) => Float64`
 
+
 <hr />
 
 ### u16
@@ -171,6 +172,10 @@ const port = u16.new(8080);
 - To `i64`: `u16.cast_to_i64(n: Uint16) => Int64`
 - To `f64`: `u16.cast_to_f64(n: Uint16) => Float64`
 
+**Convert**
+- From `u8`: `u16.convert.from_u8(h: Uint8, l: Uint8) => Uint16`
+- To: `u8`: `u16.convert.to_u8(n: Uint16) => [Uint8, Uint8]`
+
 <hr />
 
 ### i16
@@ -214,3 +219,7 @@ const contestant_score = i16.new(0);
 - To `u64`: `i16.cast_to_u64(n: Int16) => Uint64`
 - To `i64`: `i16.cast_to_i64(n: Int16) => Int64`
 - To `f64`: `i16.cast_to_f64(n: Int16) => Float64`
+
+**Convert**
+- From `i8`: `i16.convert.from_i8(h: Int8, l: Int8) => Int16`
+- To: `i8`: `i16.convert.to_i8(n: Int16) => [Int8, Int8]`
