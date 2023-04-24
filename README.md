@@ -179,7 +179,7 @@ const port = u16.new(8080);
 ```
 import { i16 } from 'tnums';
 
-const utf16_char = i16.new(8080);
+const contestant_score = i16.new(0);
 ```
 
 **Math**
