@@ -1,6 +1,9 @@
+import { f32_to_u32, f32_to_i32, new_f32 } from "./numbers/f32";
 import { i16_add_i16, i16_add_i8, i16_add_u16, i16_add_u8, i16_div_i16, i16_div_u16, i16_div_u8, i16_from_i8, i16_mul_i16, i16_mul_i8, i16_mul_u16, i16_mul_u8, i16_sub_i16, i16_sub_i8, i16_sub_u16, i16_sub_u8, i16_to_i8, i16_to_u16, new_i16 } from "./numbers/i16";
+import { i32_to_f32, i32_to_u32, new_i32 } from "./numbers/i32";
 import { new_i8, i8_add_i8, i8_add_u8, i8_div_i8, i8_div_u8, i8_mul_i8, i8_mul_u8, i8_sub_i8, i8_sub_u8, i8_to_u8, i8_to_i16, i8_to_u16 } from "./numbers/i8";
 import { new_u16, u16_add_i16, u16_add_i8, u16_add_u16, u16_add_u8, u16_div_i16, u16_div_u16, u16_from_u8, u16_mul_i16, u16_mul_i8, u16_mul_u16, u16_mul_u8, u16_sub_i16, u16_sub_i8, u16_sub_u16, u16_sub_u8, u16_to_i16, u16_to_u8 } from "./numbers/u16";
+import { new_u32, u32_to_f32, u32_to_i32 } from "./numbers/u32";
 import { new_u8, u8_add_i8, u8_add_u8, u8_div_i8, u8_div_u8, u8_mul_i8, u8_mul_u8, u8_sub_i8, u8_sub_u8, u8_to_i16, u8_to_i8, u8_to_u16 } from "./numbers/u8";
 
 // Uint8
@@ -137,5 +140,44 @@ export const i16 = {
     },
 }
 
+export const u32 = {
+    new: new_u32,
+    math: {},
+    cast: {
+        to_i32: u32_to_i32,
+        to_f32: u32_to_f32,
+    },
+    convert: {
+        from_u8: null,
+        from_u16: null,
+        to_u8: null,
+        to_u16: null,
+    },
+}
 
-export default { u8, i8, u16, i16 };
+export const i32 = {
+    new: new_i32,
+    math: {},
+    cast: {
+        to_u32: i32_to_u32,
+        to_f32: i32_to_f32,
+    },
+    convert: {
+        from_i8: null,
+        from_i16: null,
+        to_i8: null,
+        to_i16: null,
+    },
+}
+
+export const f32 = {
+    new: new_f32,
+    math: {},
+    cast: {
+        to_u32: f32_to_u32,
+        to_f32: f32_to_i32,
+    },
+}
+
+
+export default { u8, i8, u16, i16, u32, i32, f32 };
